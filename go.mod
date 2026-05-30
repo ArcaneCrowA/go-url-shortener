@@ -4,14 +4,14 @@ go 1.26.3
 
 require (
 	github.com/google/uuid v1.6.0
+	github.com/joho/godotenv v1.5.1
+	github.com/redis/go-redis/v9 v9.20.0
 	go.mongodb.org/mongo-driver/v2 v2.6.0
 )
 
 require (
 	github.com/cespare/xxhash/v2 v2.3.0 // indirect
-	github.com/joho/godotenv v1.5.1 // indirect
 	github.com/klauspost/compress v1.17.6 // indirect
-	github.com/redis/go-redis/v9 v9.20.0 // indirect
 	github.com/xdg-go/pbkdf2 v1.0.0 // indirect
 	github.com/xdg-go/scram v1.2.0 // indirect
 	github.com/xdg-go/stringprep v1.0.4 // indirect
