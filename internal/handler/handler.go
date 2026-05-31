@@ -34,6 +34,14 @@ func (h *Handler) Shorten(w http.ResponseWriter, r *http.Request) {
 		w.WriteHeader(http.StatusBadRequest)
 		return
 	}
+
+	err = data.Validate()
+	if err != nil {
+		HandleValidationErr(err)
+		w.WriteHeader(http.StatusBadRequest)
+		return
+	}
+
 	code, err := h.service.Shorten(data.Website)
 	if err != nil {
 		w.WriteHeader(http.StatusInternalServerError)
